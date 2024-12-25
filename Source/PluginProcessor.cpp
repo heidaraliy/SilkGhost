@@ -723,7 +723,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout SilkGhostAudioProcessor::cre
     params.emplace_back(std::make_unique<juce::AudioParameterFloat>(
         "decayTime",
         "Decay Time",
-        juce::NormalisableRange<float>(0.5f, 10.0f, 0.1f),
+        juce::NormalisableRange<float>(0.1f, 20.0f, 0.1f),
         2.0f));
 
     params.emplace_back(std::make_unique<juce::AudioParameterFloat>(
@@ -741,7 +741,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout SilkGhostAudioProcessor::cre
     params.emplace_back(std::make_unique<juce::AudioParameterFloat>(
         "preDelay",
         "Pre-Delay",
-        juce::NormalisableRange<float>(0.0f, 200.0f, 1.0f),
+        juce::NormalisableRange<float>(0.0f, 200.0f, 0.1f),
         0.0f));
 
     params.emplace_back(std::make_unique<juce::AudioParameterBool>(

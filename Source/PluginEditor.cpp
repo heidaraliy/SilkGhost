@@ -83,7 +83,7 @@ SilkGhostAudioProcessorEditor::SilkGhostAudioProcessorEditor (SilkGhostAudioProc
         audioProcessor.getParameters(), "reverseReverb", reverseReverbButton);
     
     // setting the decay.
-    decayTimeSlider.setRange(0.5, 10.0, 0.1);
+    decayTimeSlider.setRange(0.1, 20.0, 0.1);
     decayTimeSlider.setNumDecimalPlacesToDisplay(1);
     decayTimeSlider.setValue(1.0);
     decayTimeSlider.setTextValueSuffix("s");
